@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Rubik:wght@600&display=swap');
+
+/*Tumma teema TIM-järjestelmään*/
+/*Tulevaisuudessa pyritään luomaan teema suoraan saatavaksi TIMiin*/
+
+.note{
+border-radius: 5px;
+margin-block: 10px;
+transition: 500ms ease;
+}
+.note:hover{
+border-block: 15px solid #F60;
+scale: 1.2;
+transform: translateX(-20%);
+}
+.notes:hover{
+background-color: #444545;
+}
+.glyphicon.glyphicon-pencil::before{
+color: white;
+}
+
+html{
+scroll-behavior: smooth;
+}
+h1{
+font-weight: 900;
+}
+h1, h2, h3, h4, h5, h6{
+color: #FCF7FF !important;
+font-family: "Rubik";
+}
+.text-center{
+font-family: "Press Start 2P";
+transition: all 300ms ease-in-out;
+color: #fbfbfe;
+position: relative;
+z-index: 100;
+}
+.areatitle{
+margin-left: 2ch;
+}
+.paragraphs img. span:not(.mathp){
+filter: none;
+}
+.text-center:hover{
+scale: 1.4;
+text-shadow: 3px 5px #654597;
+cursor: help;
+}
+img{
+border-radius: 10px;
+}
+a::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background-color: #C6DDF0;
+  transform-origin: bottom;
+  transition: transform 400ms ease;
+}
+a, a:visited, a:hover{
+color: #C6DDF0;
+}
+@media (hover){
+a{
+display: inline-block;
+position: relative;
+font-weight: normal;
+/*font-size: 1.6rem;*/
+}
+a:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+a:hover{
+text-decoration: none;
+}
+.nav > li > a{
+transition: 390ms ease-in-out;
+transition-delay: 10ms;
+}
+.nav > li > a:hover{
+background-color: transparent;
+}
+tim-logo{
+transition: all 300ms ease;
+}
+tim-logo:hover{
+scale: 1.3;
+rotate: 40deg;
+}
+.btn{
+transition: all 200ms ease;
+}
+.btn:hover{
+font-size: 1.4rem;
+background-color: #C6DDF0;
+}
+.note p{
+font-size: 1.5rem;
+letter-spacing: 0.025ch;
+}
+}
+.left-fixed-side .btn.btn-sm.btn-default:nth-child(5){
+background-color: #614344;
+color: white;
+width: 80%;
+align-self: center;
+border-radius: 50px;
+}
+.glyphicon.glyphicon-plus::before{
+color: white;
+}
+
+p, li, ul, tr, td{
+color: #FCF7FF;
+font-family: Poppins !important;
+}
+ body, .main-content, .material, #pars{
+background-color: #444545 !important;
+}
+
+#menuTabs{
+border-radius: 0px 0px 20px 0px;
+background-color: #2A2B2A;
+font-family: Poppins;
+}
+.left-fixed-side{
+border-bottom-right-radius: 20px;
+}
+.nav-tabs{
+border: none;
+}
+.tab-content {
+border: none;
+}
+#tab-bookmark h5, tab-container h5{
+text-align: center;
+color: white;
+font-size: 2rem;
+}
+#tab-bookmark{
+padding-block: 1rem;
+}
+.glyphicon{
+transition: rotate 400ms ease;
+}
+bookmarks-list{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+bookmarks-list button{
+width: 100%;
+} 
+#tab-settings-link i{
+width: 100%;
+height: 100%;
+}
+#tab-settings-link i:hover{
+rotate: 50deg;
+cursor: pointer;
+}
+
+tab-container settings-tab{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+overflow: hidden;
+padding-block: 10px;
+border-bottom-right-radius: 30px;
+}
+
+.csRunMenu{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+margin-right: 1.3em;
+}
+
+bookmarks-list .btn-group.btn-group-sm.margin-4 button{
+border-radius: 30px;
+outline: 1px solid white;
+} 
+
+/*
+.left-fixed-side #menuTabs{
+ display: block;
+}
+.left-fixed-side tab-container bookmarks-list button{
+opacity: 0;
+transform: translateX(-100%);
+transition: all 500ms ease;
+}
+ .left-fixed-side.show tab-container bookmarks-list button{
+opacity: 1;
+transform: translateX(0%);
+transition: all 500ms ease;
+}
+.left-fixed-side.show #menuTabs{
+opacity: 1;
+}
+*/
+
+.areatoggle.glyphicon.glyphicon-minus{
+rotate: 180deg;
+transition: all 300ms ease;
+}
+.areatoggle.glyphicon.glyphicon-plus:hover{
+animation: hint 1000ms;
+animation-iteration-count: 2;
+animation-delay:2000ms;
+}
+
+@keyframes hint{
+0% {rotate: 0deg;}
+25% {rotate: 45deg;
+scale: 1.1;}
+50% {rotate: -45deg;}
+75% {rotate: 15deg;
+scale: 1;}
+100% {rotate: 0deg;}
+}
